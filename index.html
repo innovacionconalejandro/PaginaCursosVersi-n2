@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aumenta tu Productividad Profesional con IA - Cursos de Certificación</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ai-blue': '#0077B6',
+                        'creative-coral': '#FF4778',
+                        'project-green': '#00B894',
+                        'scrum-yellow': '#FDCB6E',
+                        'lean-graphite': '#636E72'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hexagon {
+            width: 120px;
+            height: 104px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            position: relative;
+            margin: 52px auto;
+            border-radius: 10px;
+            transform: rotate(30deg);
+        }
+        .hexagon:before,
+        .hexagon:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            border-left: 60px solid transparent;
+            border-right: 60px solid transparent;
+        }
+        .hexagon:before {
+            bottom: 100%;
+            border-bottom: 30px solid;
+            border-bottom-color: inherit;
+        }
+        .hexagon:after {
+            top: 100%;
+            border-top: 30px solid;
+            border-top-color: inherit;
+        }
+        .hexagon-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-30deg);
+            text-align: center;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .course-card {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        .course-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .dark .gradient-bg {
+            background: linear-gradient(135deg, #2D3748 0%, #1A202C 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <!-- Header -->
+    <header class="bg-white dark:bg-gray-800 shadow-lg sticky top-0 z-50 transition-colors duration-300">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="text-2xl font-bold text-gray-800 dark:text-white">
+                        <span class="text-blue-600">Innovar</span> con Alejandro
+                    </div>
+                    <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-medium">
+                        En equipo con Ant-Ara
+                    </span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Inicio</a>
+                    <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Sobre mí</a>
+                    <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Servicios</a>
+                    <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Proyectos</a>
+                    <a href="#" class="text-blue-600 dark:text-blue-400 font-semibold">Cursos</a>
+                    <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contacto</a>
+                </div>
+
+                <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
+                    <i class="fas fa-moon dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:inline"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                Aumenta tu <span class="text-yellow-300">Productividad</span><br>
+                Profesional con <span class="text-blue-300">IA</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
+                Certifícate en las tecnologías más demandadas del mercado y transforma tu carrera profesional
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-4 px-8 rounded-lg text-lg transition-colors">
+                    Ver Cursos Disponibles
+                </button>
+                <button class="border-2 border-white text-white hover:bg-white hover:text-gray-900 font-bold py-4 px-8 rounded-lg text-lg transition-colors">
+                    Conocer Beneficios
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-20 bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800 dark:text-white">
+                ¿Por qué <span class="text-blue-600">certificarte</span> con nosotros?
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                <div class="text-center">
+                    <div class="hexagon mx-auto mb-4" style="background: linear-gradient(135deg, #0077B6 0%, #005577 100%);">
+                        <div class="hexagon-content">
+                            <i class="fas fa-certificate text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-800 dark:text-white">Validación Profesional</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm">Certificaciones reconocidas internacionalmente</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="hexagon mx-auto mb-4" style="background: linear-gradient(135deg, #FF4778 0%, #CC3355 100%);">
+                        <div class="hexagon-content">
+                            <i class="fas fa-trophy text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-800 dark:text-white">Ventaja Competitiva</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm">Destaca en el mercado laboral actual</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="hexagon mx-auto mb-4" style="background: linear-gradient(135deg, #00B894 0%, #008866 100%);">
+                        <div class="hexagon-content">
+                            <i class="fas fa-users text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-800 dark:text-white">Impacto en Equipo</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm">Mejora la productividad de tu organización</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="hexagon mx-auto mb-4" style="background: linear-gradient(135deg, #FDCB6E 0%, #E17055 100%);">
+                        <div class="hexagon-content">
+                            <i class="fas fa-hands-helping text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-800 dark:text-white">Acompañamiento</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm">Soporte personalizado durante tu aprendizaje</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="hexagon mx-auto mb-4" style="background: linear-gradient(135deg, #636E72 0%, #2D3436 100%);">
+                        <div class="hexagon-content">
+                            <i class="fas fa-shield-alt text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-800 dark:text-white">Confianza</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm">Metodología probada y resultados garantizados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification Routes -->
+    <section class="py-20 bg-gray-100 dark:bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800 dark:text-white">
+                Rutas de <span class="text-blue-600">Certificación</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl border-2 border-blue-200 dark:border-blue-800">
+                    <div class="text-center mb-6">
+                        <div class="bg-blue-100 dark:bg-blue-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-star text-blue-600 dark:text-blue-400 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-2">Curso Esencial</h3>
+                        <p class="text-gray-600 dark:text-gray-400">IA & Productividad Fundamental</p>
+                    </div>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold text-blue-600">$299</span>
+                        <span class="text-gray-600 dark:text-gray-400"> USD</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-700 dark:text-gray-300">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Fundamentos de IA aplicada
+                        </li>
+                        <li class="flex items-center text-gray-700 dark:text-gray-300">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Herramientas de productividad
+                        </li>
+                        <li class="flex items-center text-gray-700 dark:text-gray-300">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Certificación incluida
+                        </li>
+                    </ul>
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+                        Comenzar Ahora
+                    </button>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl border-2 border-yellow-200 dark:border-yellow-800 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-yellow-500 text-gray-900 px-4 py-2 rounded-full text-sm font-bold">RECOMENDADO</span>
+                    </div>
+                    <div class="text-center mb-6">
+                        <div class="bg-yellow-100 dark:bg-yellow-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-crown text-yellow-600 dark:text-yellow-400 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-2">Curso Premium</h3>
+                        <p class="text-gray-600 dark:text-gray-400">IA Avanzada + Gestión de Proyectos</p>
+                    </div>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold text-yellow-600">$499</span>
+                        <span class="text-gray-600 dark:text-gray-400"> USD</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-700 dark:text-gray-300">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Todo lo del curso esencial
+                        </li>
+                        <li class="flex items-center text-gray-700 dark:text-gray-300">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Gestión avanzada de proyectos
+                        </li>
+                        <li class="flex items-center text-gray-700 dark:text-gray-300">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Metodologías ágiles
+                        </li>
+                        <li class="flex items-center text-gray-700 dark:text-gray-300">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Mentoría personalizada
+                        </li>
+                    </ul>
+                    <button class="w-full bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+                        Comenzar Ahora
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Catalog -->
+    <section class="py-20 bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800 dark:text-white">
+                Catálogo de <span class="text-blue-600">Cursos</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Course 1: AI Fundamentals -->
+                <div class="course-card bg-white dark:bg-gray-700 rounded-2xl p-6 shadow-lg hover:border-ai-blue">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full flex items-center justify-center mr-4" style="background-color: #0077B6;">
+                            <i class="fas fa-brain text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 dark:text-white">Domina la IA</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">AIFPC®</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300 mb-6">
+                        Fundamentos técnicos y prácticos de Inteligencia Artificial para profesionales.
+                    </p>
+                    <div class="flex space-x-2">
+                        <button class="flex-1 bg-ai-blue hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors text-sm">
+                            Ver Detalles
+                        </button>
+                        <button class="flex-1 border-2 border-ai-blue text-ai-blue hover:bg-ai-blue hover:text-white font-semibold py-2 px-4 rounded-lg transition-colors text-sm">
+                            Inscribirme
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Course 2: Generative AI -->
+                <div class="course-card bg-white dark:bg-gray-700 rounded-2xl p-6 shadow-lg hover:border-creative-coral">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full flex items-center justify-center mr-4" style="background-color: #FF4778;">
+                            <i class="fas fa-palette text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 dark:text-white">Creatividad con IA</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">GAIPC®</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300 mb-6">
+                        Técnicas y herramientas para crear contenido innovador con IA generativa.
+                    </p>
+                    <div class="flex space-x-2">
+                        <button class="flex-1 bg-creative-coral hover:bg-red-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors text-sm">
+                            Ver Detalles
+                        </button>
+                        <button class="flex-1 border-2 border-creative-coral text-creative-coral hover:bg-creative-coral hover:text-white font-semibold py-2 px-4 rounded-lg transition-colors text-sm">
+                            Inscribirme
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Course 3: Project Management -->
+                <div class="course-card bg-white dark:bg-gray-700 rounded-2xl p-6 shadow-lg hover:border-project-green">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full flex items-center justify-center mr-4" style="background-color: #00B894;">
+                            <i class="fas fa-project-diagram text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 dark:text-white">Gestión con IA</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">AIPMFPC™</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300 mb-6">
+                        Gestión ágil y optimizada de proyectos con Inteligencia Artificial integrada.
+                    </p>
+                    <div class="flex space-x-2">
+                        <button class="flex-1 bg-project-green hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors text-sm">
+                            Ver Detalles
+                        </button>
+                        <button class="flex-1 border-2 border-project-green text-project-green hover:bg-project-green hover:text-white font-semibold py-2 px-4 rounded-lg transition-colors text-sm">
+                            Inscribirme
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Course 4: Scrum -->
+                <div class="course-card bg-white dark:bg-gray-700 rounded-2xl p-6 shadow-lg hover:border-scrum-yellow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full flex items-center justify-center mr-4" style="background-color: #FDCB6E;">
+                            <i class="fas fa-sync-alt text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 dark:text-white">Scrum Master</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">SMPC®</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300 mb-6">
+                        Scrum aplicado a productividad personal y de equipo para máxima eficiencia.
+                    </p>
+                    <div class="flex space-x-2">
+                        <button class="flex-1 bg-scrum-yellow hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors text-sm">
+                            Ver Detalles
+                        </button>
+                        <button class="flex-1 border-2 border-scrum-yellow text-scrum-yellow hover:bg-scrum-yellow hover:text-white font-semibold py-2 px-4 rounded-lg transition-colors text-sm">
+                            Inscribirme
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Course 5: Lean Six Sigma -->
+                <div class="course-card bg-white dark:bg-gray-700 rounded-2xl p-6 shadow-lg hover:border-lean-graphite">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full flex items-center justify-center mr-4" style="background-color: #636E72;">
+                            <i class="fas fa-chart-line text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 dark:text-white">Lean Six Sigma</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">LSSGB®</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300 mb-6">
+                        Mejora continua y reducción de desperdicio en procesos organizacionales.
+                    </p>
+                    <div class="flex space-x-2">
+                        <button class="flex-1 bg-lean-graphite hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors text-sm">
+                            Ver Detalles
+                        </button>
+                        <button class="flex-1 border-2 border-lean-graphite text-lean-graphite hover:bg-lean-graphite hover:text-white font-semibold py-2 px-4 rounded-lg transition-colors text-sm">
+                            Inscribirme
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification Levels -->
+    <section class="py-20 bg-gray-100 dark:bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800 dark:text-white">
+                Niveles de <span class="text-blue-600">Certificación</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 text-center shadow-lg">
+                    <div class="bg-green-100 dark:bg-green-900 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-user-check text-green-600 dark:text-green-400 text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">Participación</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Certificado de participación incluido en todos los cursos</p>
+                    <div class="bg-green-50 dark:bg-green-900 p-4 rounded-lg">
+                        <p class="text-green-700 dark:text-green-300 font-semibold">✓ Incluido</p>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 text-center shadow-lg border-2 border-blue-200 dark:border-blue-800">
+                    <div class="bg-blue-100 dark:bg-blue-900 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-medal text-blue-600 dark:text-blue-400 text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">Competencia</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Certificación profesional con voucher incluido</p>
+                    <div class="bg-blue-50 dark:bg-blue-900 p-4 rounded-lg">
+                        <p class="text-blue-700 dark:text-blue-300 font-semibold">≥70% + Voucher</p>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 text-center shadow-lg border-2 border-yellow-200 dark:border-yellow-800">
+                    <div class="bg-yellow-100 dark:bg-yellow-900 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-trophy text-yellow-600 dark:text-yellow-400 text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">Avanzado</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Certificación experta con proyecto final</p>
+                    <div class="bg-yellow-50 dark:bg-yellow-900 p-4 rounded-lg">
+                        <p class="text-yellow-700 dark:text-yellow-300 font-semibold">≥85% + Proyecto</p>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Costo adicional</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods -->
+    <section class="py-20 bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-16 text-gray-800 dark:text-white">
+                Métodos de <span class="text-blue-600">Pago</span>
+            </h2>
+            
+            <div class="flex flex-wrap justify-center items-center gap-8 opacity-70">
+                <div class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold text-lg">PayPal</div>
+                <div class="bg-gray-900 text-white px-6 py-3 rounded-lg font-bold text-lg">Apple Pay</div>
+                <div class="bg-green-600 text-white px-6 py-3 rounded-lg font-bold text-lg">Google Pay</div>
+                <div class="bg-purple-600 text-white px-6 py-3 rounded-lg font-bold text-lg">CertiProf</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Innovar con Alejandro</h3>
+                    <p class="text-gray-400">Transformando carreras profesionales a través de la educación en IA y productividad.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Cursos</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Fundamentos de IA</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">IA Generativa</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Gestión de Proyectos</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Scrum Master</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Soporte</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Centro de Ayuda</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contacto</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-youtube text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Innovar con Alejandro. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Dark mode toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const html = document.documentElement;
+
+        darkModeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.setItem('darkMode', html.classList.contains('dark'));
+        });
+
+        // Load saved dark mode preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            html.classList.add('dark');
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Course card interactions
+        document.querySelectorAll('.course-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-8px)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98148a06960ecc72',t:'MTc1ODIzNzI2MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
